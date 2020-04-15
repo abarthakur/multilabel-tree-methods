@@ -1,5 +1,11 @@
 ### Project Overview
 
+> This repository is a python implementation of [Parabel][2] and [HOMER][1] (Label tree methods, and [CraftML][3] (Cluster tree method) written in a modular way so that you can switch out various components. 
+
+> It also contains notebooks with exploratory data analysis of multi-label datasets, and analysis of the tree methods themselves.
+
+Backstory -
+
 As part of my Bachelor's Thesis Project (BTP), I worked on developing a method for extreme multilabel classification
 
 * The method is a variant of a Label Tree, which consist of recursively partitioning the labels into a tree structure with leaves containing classifiers that predict the relevance of one or more labels, and internal nodes containing classifiers that predict the relevance of its child subtree. Label Tree methods offer logarithmic time complexity in evaluation, compared to the baseline ensemble method of Binary Relevance (One-vs-all).
@@ -9,10 +15,6 @@ As part of my Bachelor's Thesis Project (BTP), I worked on developing a method f
 When I returned to the project later, I also looked at Cluster Tree methods, specifically CraftML, to possibly leverage locality of labelsets in the feature space. After expending some more time, I ultimately abandoned this direction (loosely, tree ensemble approaches). 
 
 I have gathered all useful code from my efforts into this repository, which may serve as a useful starting point.
-
-> This repository is a python implementation of [Parabel][2] and [HOMER][1] (Label tree methods, and [CraftML][3] (Cluster tree method) written in a modular way so that you can switch out various components. 
-
-> It also contains notebooks with exploratory data analysis of multi-label datasets, and analysis of the tree methods themselves.
 
 
 ### Table of Contents
