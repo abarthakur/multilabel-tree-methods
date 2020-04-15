@@ -17,7 +17,9 @@ I have gathered all useful code from my efforts into this repository, which may 
 
 ### Table of Contents
 
-* [Files and Classes](#files-and-classes)
+* [Installation](#installation)
+* [Notebooks](#notebooks)
+* [Modules](#modules)
 	* [labeltree.py](#src/labeltree.py)
 	* [clustertree.py](#src/clustertree.py)
 	* [partition.py](#src/partition.py)
@@ -27,13 +29,17 @@ I have gathered all useful code from my efforts into this repository, which may 
 	* [utils.py](#src/utils.py)
 * [Resources and References](#resources-and-references)
 
-### Files and Classes
+### Installation
 
-To run, first install the required Python 3 modules
+To run, first install the required Python 3 modules as written in ``requirements.txt``. All library versions are set to the ones I used during development. In a fresh environment, ``pip install -r requirements.txt`` should do the job!
 
-```
-pip install -r requirements.txt
-```
+### Notebooks
+
+* [src/notebooks/eda_labels.ipynb](/src/notebooks/eda_labels.ipynb) : Contains various graphs and statistics to investigate how label counts vary, and how much overlap there is between labels.
+* [src/notebooks/eda_tsne_visualization.ipynb](/src/notebooks/eda_tsne_visualization.ipynb): Contains interactive visualizations of labels in feature space, labels in labelset space and labelsets in feature space. Purpose is to determine if labels/labelsets are localized in X space, or if labels are localized in Y space.
+* [src/notebooks/labeltree_imbalance_visualization.ipynb](/src/notebooks/labeltree_imbalance_visualization.ipynb) : Visualizes data imbalance in the intermediate binary classification problems at nodes and leaves of label trees, with different choices for the clustering.
+
+### Modules
 
 #### src/labeltree.py
 
